@@ -17,11 +17,81 @@ html,body {
 	max-width: 800px;
 	margin: auto;
 }
+.top-container {
+	display: block;
+	position: fixed;
+	top: 20%;
+	height: auto;
+	max-width: 800px;
+	max-height: 300px;
+}
 h1 {
 	font-family: 'Rubik';
 	font-size: 3em;
 	font-weight: 300;
+	letter-spacing: .02em;
+	line-height: 1.3em;
+	margin-bottom: 120px;
 }
-#h2 {
+#h1-bold {
 	font-weight: 700;
+}
+h3 {
+	font-family: 'Rubik';
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: .02em;
+	margin-bottom: 0;
+}
+h4 {
+	font-family: 'Rubik';
+	font-size: 1em;
+	font-weight: 300;
+	letter-spacing: .02em;
+	line-height: 1.5em;
+}
+#h3-bold {
+	font-weight: 400;
+}
+.showme{ 
+display: none;
+}
+.showhim:hover .showme{
+display : inline-block;
+}
+.showhim:hover .ok{
+display : none;
+}
+.fas fa-arrow-right {
+	vertical-align: middle !important;
+}
+input[type='checkbox'] {
+  display: none;
+}
+.lbl-toggle {
+  display: block;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 350px;
+}
+
+.lbl-toggle2 {
+  display: block;
+  cursor: pointer;
+  transition: all 1s ease-out;
+}
+.collapsible-content2 {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+.toggle:checked + .lbl-toggle2 + .collapsible-content2 {
+  max-height: 350px;
 }
