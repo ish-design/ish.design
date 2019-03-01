@@ -66,8 +66,7 @@
     closeOnClick: true
   })
     .setLngLat(feature.geometry.coordinates)
-    .setHTML('<div style="background-image: url('+ feature.properties.image +');" class="item-image"></div>' + '<div class="icon-description"><h3>' + feature.properties.title + '</h3>' + feature.properties.description + '<br /><a href="' + feature.properties.directions + '">Directions ›</a></div>')
-    // .setHTML('<img src="img/eats.jpg">' + '<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
+    .setHTML('<div style="background-image: url('+ feature.properties.image +');" class="item-image"></div>' + '<div class="icon-description"><h3>' + feature.properties.title + '</h3>' + feature.properties.description + '<br /><a href="' + feature.properties.directions + '" target="new" >Directions ›</a></div>')
     .setLngLat(feature.geometry.coordinates)
     .addTo(map);
   });
