@@ -21,7 +21,7 @@
 		  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
 		  var that = this;
-		  var delta = 250 - Math.random() * 100;
+		  var delta = 300 - Math.random() * 100;
 
 		  if (this.isDeleting) { delta /= 2; }
 
@@ -51,6 +51,6 @@
 		  // INJECT CSS
 		  var css = document.createElement("style");
 		  css.type = "text/css";
-		  css.innerHTML = ".txt-rotate > .wrap { border-right: 0 solid #666; padding-right:0px; }";
+		  css.innerHTML = ".txt-rotate > .wrap { border-right: 0 solid #666 }";
 		  document.body.appendChild(css);
 		};
