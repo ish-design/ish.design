@@ -116,6 +116,14 @@ hr {
 a {
   color: #000;
 }
+a:visited {
+  border: none;
+  outline: 0;
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
 
 audio,
 canvas,
